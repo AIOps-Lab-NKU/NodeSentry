@@ -1,4 +1,4 @@
-# NodeSentry: HPC Node Anomaly Detection Model Based on Transformer and TSFEL
+# NodeSentry: Effective Node-Level Anomaly Detection in HPC Systems via Coarse-Grained Clustering and Fine-Grained Model Sharing
 
 ## Project Introduction
 
