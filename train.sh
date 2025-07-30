@@ -1,0 +1,1 @@
+python training.py --max_epochs 30 --batch_size 50 --window_size 20 --nhead 3 --num_layers 3 --num_experts 3 --k 1

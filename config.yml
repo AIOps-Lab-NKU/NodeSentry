@@ -1,0 +1,28 @@
+# Dataset
+source_folder: node_data        # Path to the source data folder
+jobinfo: jobinfo                # Path to the job information file
+metric_file: metric.json        # Path to the metric file
+train_start: 2024-01-01 00:00:00     # Start time of the training set
+train_end: 2024-01-02 00:00:00       # End time of the training set
+valid_end: 2024-01-02 00:00:00       # End time of the validation set
+test_end: 2024-01-04 00:00:00        # End time of the test set
+
+# TSFEL
+normalized_folder: normalized_result/test             # Path to the folder containing normalized data
+cluster_folder: classify_result/test                  # Path to the folder containing clustering results
+center_feature_date: feature_center/test              # Path to the folder containing cluster centers and feature weights
+job_cluster_file: classify_result/test/job/job_20.csv          # Path to the clustering result file during job execution
+nojob_cluster_file: classify_result/test/nojob/nojob_10.csv    # Path to the clustering result file during idle waiting
+job_center_feature: feature_center/test/job_20_nojob_10/job          # Path to the cluster center and feature weight folder during job execution
+nojob_center_feature: feature_center/test/job_20_nojob_10/nojob      # Path to the cluster center and feature weight folder during idle waiting
+
+# MODEL
+model_dir: model/test               # Path to store trained model
+result_dir: result/test             # Path storing anomaly detection results
+model_name: Transformer.pth                       # Name of the trained Transformer model file
+all_reconstructed: all_reconstructed.npy          # Name of the file containing all reconstructed data
+all_processed_data: all_processed_data.npy        # Name of the file containing all processed data
+score_file: score.csv                             # Name of the score file
+metric_weight_file: metric_feature_weight.json    # Name of the feature weight file
+distance_file: distances.json                     # Distance from cluster center
+center_file: center.csv                           # cluster center
